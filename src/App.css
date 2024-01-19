@@ -1,0 +1,48 @@
+@tailwind base;
+
+@layer utilities {
+  *::-webkit-scrollbar {
+    width: 5px;
+    height: 20px;
+  }
+
+  *::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #0c0912;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: #0c0912;
+    border-radius: 100vh;
+   ;
+  }
+
+ *::-webkit-scrollbar-thumb:hover {
+    background: #baceeb;
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-custom-color {
+  background-color: #0c0912 ;
+}
+/* Add this to your CSS styles */
+body.fullscreen {
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Hide the scrollbar */
+body.fullscreen::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Hide the navbar (assuming your navbar has a class 'navbar') */
+body.fullscreen .navbar {
+  display: none;
+}
+
+
+
