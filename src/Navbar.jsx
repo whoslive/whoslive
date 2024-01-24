@@ -17,7 +17,7 @@ const Navbar = () => {
             Home
           </Link>
           
-          {/* Dropdown for Vods, Updates, and MultiStreams */}
+          {/* Dropdown for Vods, and MultiStreams */}
           <div className="relative group">
             <button
               onClick={toggleDropdown}
