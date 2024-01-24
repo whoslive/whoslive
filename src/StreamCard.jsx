@@ -40,7 +40,7 @@ const StreamCard = ({ onStreamHover, streamsData }) => {
 
     // Initially check the online status and set up an interval for periodic checks
     checkOnlineStatus();
-    const intervalId = setInterval(checkOnlineStatus, 3 * 60 * 1000);
+    const intervalId = setInterval(checkOnlineStatus, 5* 60 * 1000);
 
     // Clean up the interval when the component unmounts
     return () => clearInterval(intervalId);
