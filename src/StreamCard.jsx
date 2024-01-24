@@ -103,6 +103,7 @@ const StreamCard = ({ onStreamHover, streamsData }) => {
             allowFullScreen
             frameBorder="0"
             scrolling="no"
+            loading="lazy"
           ></iframe>
 
           {/* Stream title */}
@@ -121,6 +122,7 @@ const StreamCard = ({ onStreamHover, streamsData }) => {
                 frameBorder="0"
                 onMouseEnter={() => handleStreamHover(stream)}
                 onMouseLeave={() => handleStreamHover(null)}
+                loading="lazy"
               ></iframe>
 
               {/* Highlight and Watch text */}
