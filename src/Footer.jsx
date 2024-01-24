@@ -8,7 +8,7 @@ const Footer = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <footer className="bg-gradient-to-b from-blue-600 to-indigo-600 p-4 text-white text-center rounded-full">
+    <footer className="bg-gradient-to-b  from-indigo-600 to-blue-600 p-4 text-white text-center rounded-full">
       <div className="flex flex-col items-center mb-4">
         <a
           href="https://twitter.com/Vict3r7"
