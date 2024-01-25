@@ -76,7 +76,7 @@ import axios from 'axios';
                           <iframe
                             src={stream.chatSrc}
                             title={`Chat ${index + 1}`}
-                            className="w-full h-48 md:h-48 mt-1 border-double border-4 border-blue-900"
+                            className="w-full h-40 md:h-40 mt-1 border-solid border-2 border-blue-900"
                             allowFullScreen
                             frameBorder="0"
                             onMouseEnter={() => handleStreamHover(stream)}
@@ -84,7 +84,7 @@ import axios from 'axios';
                           ></iframe>
 
                           {/* Highlight and Watch text */}
-                          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 bg-sky-500 bg-opacity-20 p-4 hover:opacity-100 transition-opacity duration-300">
+                          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 bg-sky-500 bg-opacity-40 p-4 hover:opacity-100 transition-opacity duration-300">
                             <p className="text-gray-300 font-bold text-2xl">Watch in Theater Mode 🍿</p>
                           </div>
                         </div>
@@ -117,7 +117,7 @@ import axios from 'axios';
                           <iframe
                             src={stream.chatSrc}
                             title={`Chat ${index + 1}`}
-                            className="w-full h-48 md:h-48 mt-1 border-double border-4 border-blue-900"
+                            className="w-full h-40 md:h-40 mt-1 border-solid border-2 border-blue-900"
                             allowFullScreen
                             frameBorder="0"
                             onMouseEnter={() => handleStreamHover(stream)}
@@ -126,7 +126,7 @@ import axios from 'axios';
                           ></iframe>
 
                           {/* Highlight and Watch text */}
-                          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 bg-sky-500 bg-opacity-20 p-4 hover:opacity-100 transition-opacity duration-300">
+                          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 bg-sky-500 bg-opacity-40 p-4 hover:opacity-100 transition-opacity duration-300">
                             <p className="text-gray-300 font-bold text-2xl">Watch in Theater Mode 🍿</p>
                           </div>
                         </div>
