@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import axios from 'axios';
 
-  const StreamCard = ({ onStreamHover, streamsData }) => {
+const StreamCard = ({ onStreamHover, streamsData }) => {
     const [onlineChannels, setOnlineChannels] = React.useState([]);
     const [offlineChannels, setOfflineChannels] = React.useState([]);
   

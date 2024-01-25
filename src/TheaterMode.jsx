@@ -77,7 +77,7 @@ const TheaterMode = () => {
       </div>
 
       {/* Chat iframe */}
-      <div className={`w-full lg:w-1/4 mt-4 lg:mt-0 ${isTheaterMode ? "fullscreen" : ""}`}>
+      <div className={`w-full lg:w-1/5 mt-4 lg:mt-0 ${isTheaterMode ? "fullscreen" : ""}`}>
         <iframe
           src={selectedStream?.chatSrc || ""}
           title={`Chat - ${selectedStream?.id || ""}`}
