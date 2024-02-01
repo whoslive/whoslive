@@ -10,10 +10,10 @@ const Vods = React.lazy(() => import('./Vods'))
 const MultiStreams = React.lazy(() => import('./MultiStreams')) 
 
 const App = () => {
-  return (
+  return ( <>
     <StreamProvider> 
       <Router>
-        <Navbar />
+      <Navbar/>
         <Routes>
           <Route path="/home" element={<MainLayout />} />
           <Route path="/watch/:streamId" element={<TheaterMode />} />
@@ -24,7 +24,7 @@ const App = () => {
         </Routes>
       </Router>
     </StreamProvider>
-  );
+    </>);
 };
 
 export default App;

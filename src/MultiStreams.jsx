@@ -5,11 +5,13 @@ const MultiStreams = () => {
   const [streams, setStreams] = useState([]);
   const [newStream, setNewStream] = useState("");
   const [isTheaterMode, setIsTheaterMode] = useState(false);
+  const [showAddStreamHint, setShowAddStreamHint] = useState(true);
 
   const addStream = () => {
     if (newStream.trim() !== "") {
       setStreams((prevStreams) => [...prevStreams, newStream]);
       setNewStream("");
+      setShowAddStreamHint(false); // Hide the hint after adding the first stream
     }
   };
 
@@ -81,6 +83,21 @@ const MultiStreams = () => {
       >
         <FaPlus />
       </button>
+
+      {/* Add Stream Hint */}
+      {showAddStreamHint && (
+        <div className="fixed bottom-16 right-4 text-white flex items-center">
+          <p>
+            Click + to add streams
+            <button
+              onClick={() => setShowAddStreamHint(false)}
+              className="ml-2 text-gray-400 hover:text-red-500 cursor-pointer"
+            >
+              <FaTimes />
+            </button>
+          </p>
+        </div>
+      )}
 
       {/* Theater Mode Button */}
       <button

@@ -26,8 +26,8 @@ const MainLayout = () => {
     fetchData();
   }, [setStreams]);
 
-  return (
-    <div>
+  return (<>
+    <main className="flex flex-col min-h-screen">
       {/* Wrap the lazy-loaded component in a Suspense component */}
       <Suspense fallback={<div className="text-wihte">Loading...</div>}>
         <LazyStreamCard onStreamHover={setHoveredStream} streamsData={streamsData} />
@@ -38,8 +38,10 @@ const MainLayout = () => {
           <p>{hoveredStream.id}</p>
         </div>
       )}
-      <Footer />
-    </div>
+      
+    </main>
+    <Footer/>
+    </>
   );
 };
 
