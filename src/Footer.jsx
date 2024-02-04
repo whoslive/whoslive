@@ -25,12 +25,11 @@ const Footer = () => {
           />
         </a>
 
-        <p>&copy; 2024 All whoslive rights reserved.</p>
-
         {/* Link to the Info component */}
         <Link to="/info" className="text-white hover:text-gray-700">
           About This Website.
         </Link>
+        <p>&copy; 2024 All whoslive rights reserved.</p>
       </div>
     </footer>
   );
