@@ -36,6 +36,7 @@ const MainLayout = () => {
       {hoveredStream && (
         <div>
           <p>{hoveredStream.id}</p>
+          <h1 classname="text-white text-5xl">It's over...</h1>
         </div>
       )}
       
