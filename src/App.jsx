@@ -14,7 +14,6 @@ const App = () => {
     <StreamProvider> 
       <Router>
       <Navbar/>
-        <h1 classname="text-white text-5xl">It's over...</h1>
         <Routes>
           <Route path="/home" element={<MainLayout />} />
           <Route path="/watch/:streamId" element={<TheaterMode />} />
