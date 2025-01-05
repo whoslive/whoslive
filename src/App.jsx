@@ -7,7 +7,6 @@ import Navbar from "./Navbar";
 import { StreamProvider } from "./StreamContext";
 import Info from "./Info";
 const Vods = React.lazy(() => import('./Vods'))
-const MultiStreams = React.lazy(() => import('./MultiStreams')) 
 
 const App = () => {
   return ( <>
@@ -19,7 +18,6 @@ const App = () => {
           <Route path="/watch/:streamId" element={<TheaterMode />} />
           <Route path="/info" element={<Info />} />
           <Route path="/Vods" element={<React.Suspense fallback='loading..'><Vods /></React.Suspense>} />
-          <Route path="/multi" element={<React.Suspense fallback='loading..'><MultiStreams /></React.Suspense>} />
           <Route path="*" element={<MainLayout />} />
         </Routes>
       </Router>
