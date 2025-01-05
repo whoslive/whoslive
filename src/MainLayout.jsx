@@ -26,22 +26,22 @@ const MainLayout = () => {
     fetchData();
   }, [setStreams]);
 
-  return (<>
-    <main className="flex flex-col min-h-screen">
-      {/* Wrap the lazy-loaded component in a Suspense component */}
-      <Suspense fallback={<div className="text-wihte">Loading...</div>}>
-        <LazyStreamCard onStreamHover={setHoveredStream} streamsData={streamsData} />
-      </Suspense>
+return (
+    <>
+      <main className="flex flex-col min-h-screen">
+        {/* Wrap the lazy-loaded component in a Suspense component */}
+        <Suspense fallback={<div className="text-white">Loading...</div>}>
+          <LazyStreamCard onStreamHover={setHoveredStream} streamsData={streamsData} />
+        </Suspense>
 
-      {hoveredStream && (
-        <div>
-          <p>{hoveredStream.id}</p>
-          <h1 classname="text-white text-5xl">It's over...</h1>
-        </div>
-      )}
-      
-    </main>
-    <Footer/>
+        {hoveredStream && (
+          <div>
+            <p>{hoveredStream.id}</p>
+            <h1 className="text-white text-5xl">It's over...</h1>
+          </div>
+        )}
+      </main>
+      <Footer />
     </>
   );
 };
